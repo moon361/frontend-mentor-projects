@@ -1,0 +1,162 @@
+body {
+    position: relative;
+    margin: 0;
+}
+
+main {
+    font-family: Outfit;
+}
+
+#content {
+    margin: 0 1em 1em 1em;
+    padding: 0 1em;
+}
+
+.omelette-image {
+    width: 100%;
+}
+
+.instructions {
+    margin-left: 0;
+    margin-right: 5%;
+}
+
+h1, h2 {
+    font-family: "Young Serif";
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 1;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+p {
+    font-size: 16px;
+}
+
+.card {
+    color: hsl(332, 51%, 32%);
+    background-color: hsl(330, 100%, 98%);
+    padding: 1% 8%;
+    margin-top: 2em;
+    border-radius: 25px;
+}
+
+li {
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul div {
+    color: black;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.ingredients li {
+    margin: 0;
+}
+
+ul li::before {
+    content: " ";
+    border: 2px solid hsl(14, 45%, 36%);
+    border-radius: 100%;
+    margin: 1em 1.8em 1em 0.5em;
+    align-items: center;
+}
+
+.card li::before {
+    border: 2px solid hsl(332, 51%, 32%);
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: num;
+    padding-left: 2%;
+}
+
+ol li {
+    counter-increment: num;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+ol div {
+    position: relative;
+    left: 25px;
+}
+
+ol li::before {
+    /* border: 1px solid black; */
+    content: counter(num) ". ";
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    width: 1.2em;
+}
+
+hr {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    margin-top: 2em;
+}
+
+table {
+    width: 100%;
+}
+
+.nutrients {
+    padding-left: 10%;
+}
+
+td {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.nutrients-amount {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.no-border {
+    border-bottom: none;
+}
+
+.border {
+    /* border: 1px solid black; */
+}
+
+@media (min-width:500px) {
+    body {
+        background-color: hsl(30, 54%, 90%);
+    }
+
+    main {
+        background-color: hsl(0, 0%, 100%);
+        margin: 8% 20%;
+        padding: 2%;
+        border-radius: 25px;
+    }
+
+    img {
+        border-radius: 25px;
+    }
+}
