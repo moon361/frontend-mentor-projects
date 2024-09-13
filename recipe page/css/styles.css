@@ -105,7 +105,6 @@ ol div {
 }
 
 ol li::before {
-    /* border: 1px solid black; */
     content: counter(num) ". ";
     color: hsl(14, 45%, 36%);
     font-weight: bold;
@@ -122,16 +121,16 @@ table {
     width: 100%;
 }
 
-.nutrients {
+th {
     padding-left: 10%;
 }
 
-td {
+th, td {
     padding: 1em;
     border-bottom: 1px solid #ddd;
 }
 
-.nutrients-amount {
+td {
     color: hsl(14, 45%, 36%);
     font-weight: bold;
 }
@@ -141,7 +140,7 @@ td {
 }
 
 .border {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 @media (min-width:500px) {
